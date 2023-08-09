@@ -190,7 +190,6 @@
         const videoTimeout = document.querySelector('.video');
         videoTimeout.addEventListener("timeupdate",
         function (ev) {
-            console.log(ev.target.currentTime);
             if(ev.target.currentTime >= .21){
                 const elBtnLink =  document.querySelectorAll(".video-item__link");
                 elBtnLink.forEach(function (e) {
@@ -207,7 +206,6 @@
         });
     const yourDiv = document.querySelectorAll(".video-item__link")
         .forEach(element => element.addEventListener("focusout", function (e) {
-            // yourDiv.classList.remove('active');
              document.querySelector(".video-item__btn").classList.remove('open')
              document.querySelector(".video-item__list").classList.remove('active');
         })

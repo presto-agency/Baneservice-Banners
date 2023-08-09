@@ -191,7 +191,7 @@
         const videoTimeout = document.querySelector('.video');
         videoTimeout.addEventListener("timeupdate",
         function (ev) {
-            console.log(ev.target.currentTime);
+
             if(ev.target.currentTime >= .21){
                 const elBtnLink =  document.querySelectorAll(".video-item__link");
                 elBtnLink.forEach(function (e) {
