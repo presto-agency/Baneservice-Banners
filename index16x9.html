@@ -31,26 +31,26 @@
     @media screen and (min-width: 768px) {
         html,
         body {
-            font-size: calc(100vw / 768 * 10);
+            font-size: calc(100vw / 768 * 8);
         }
 
     }
     @media screen and (min-width: 992px) {
         html,
         body {
-            font-size: calc(100vw / 992 * 10);
+            font-size: calc(100vw / 992 * 8);
         }
     }
     @media screen and (min-width: 1200px) {
         html,
         body {
-            font-size: calc(100vw / 1200 * 10);
+            font-size: calc(100vw / 1200 * 7);
         }
     }
     @media screen and (min-width: 1440px) {
         html,
         body {
-            font-size: calc(100vw / 1440 * 10);
+            font-size: calc(100vw / 1440 * 7);
         }
     }
     @media screen and (min-width: 1900px) {
@@ -64,7 +64,6 @@
         width: auto;
         position: relative;
         display: inline-block;
-
     }
     .video-item video{
         width: 100%;
@@ -73,8 +72,8 @@
     .video-item__link{
         position: absolute;
         top: 28%;
-        left: 0;
-        right: 0;
+        right: auto;
+        left: 5%;
         max-width: 48em;
         margin: 0 auto;
         width: 100%;
@@ -82,7 +81,7 @@
         transform: scale(.000003);
     }
     .video-item__link.active{
-        top: 35%;
+        top: 45%;
         transform: scale(1);
     }
     .video-item__btn{
@@ -161,7 +160,7 @@
 </style>
 <div class="video-banner">
     <div class="video-item">
-        <video class="video" loop muted autoplay src='9x16%20Fyll%20hielmen%20med-dine%20ferdigheter!.mp4'></video>
+        <video class="video" loop muted autoplay src='16x9%20Fyll%20hielmen%20med-dine%20ferdigheter!.mp4'></video>
         <div class="video-item__link">
             <button type="button" class="video-item__btn">Velg yrke</button>
             <ul class="video-item__list">
