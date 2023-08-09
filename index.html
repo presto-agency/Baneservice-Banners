@@ -50,23 +50,26 @@
     @media screen and (min-width: 1440px) {
         html,
         body {
-            font-size: calc(100vw / 1440 * 10);
+            font-size: calc(100vw / 1440 * 6);
         }
     }
     @media screen and (min-width: 1900px) {
         html,
         body {
-            font-size: calc(100vw / 1920 * 10);
+            font-size: calc(100vw / 1920 * 6);
         }
     }
 
 
     .video-item{
+        width: 100%;    
+        height: 100vh;
         position: relative;
         display: inline-block;
     }
     .video-item video{
         width: 100%;
+        height: 100%;
     }
     .video-item__link{
         position: absolute;
@@ -100,6 +103,7 @@
         margin-bottom: 1.2rem;
         position: relative;
         z-index: 3;
+        outline: none;
     }
     .video-item__btn::before{
         position: absolute;
@@ -214,16 +218,29 @@
             })
         );
     const timeoutId = setTimeout(function(){
-
         const elBtnLink =  document.querySelectorAll(".video-item__link");
-        // elBtnLink.classList.add("active");
         elBtnLink.forEach(function (e) {
             e.classList.add('active');
         });
+    }, 1000);
+    
 
-        console.log('dd')
-    }, 800);
-
+    const yourDiv = document.querySelectorAll(".video-item__link")
+        .forEach(element => element.addEventListener("focusout", function (e) {
+            // yourDiv.classList.remove('active');
+            // document.children(".video-item__btn").classList.remove('open')
+            // document.getElementsByClassName(".video-item__list").classList.remove('active');
+        })
+        );
+    // window.addEventListener('mouseup', e => {
+    //     const yourDiv = document.querySelectorAll(".video-item__link");
+    //     if (e.target != yourDiv && e.target.parentNode != yourDiv) {
+    //         yourDiv.classList.remove('active');
+    //         document.querySelector(".video-item__btn").classList.remove('open');
+    //         document.querySelector(".video-item__list").classList.remove('active');
+    //         // Or yourDiv.style.display = 'none';
+    //     }
+    // })
 
 
 </script>
