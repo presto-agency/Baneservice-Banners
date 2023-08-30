@@ -159,10 +159,10 @@
         color: #fff;
     }
 </style>
-<div class="video-banner">
-    <div class="video-item">
+<main class="video-banner">
+    <section class="video-item">
         <video class="video" loop muted autoplay src='9x16%20Fyll%20hielmen%20med-dine%20ferdigheter!.mp4'></video>
-        <div class="video-item__link">
+        <nav class="video-item__link">
             <button type="button" class="video-item__btn">Velg yrke</button>
             <ul class="video-item__list">
                 <li><a href="#">Lokmotivforer</a></li>
@@ -171,9 +171,9 @@
                 <li><a href="#">Prosiektleder</a></li>
                 <li><a href="#">Annleggsarbeider</a></li>
             </ul>
-        </div>
-    </div>
-</div>
+        </nav>
+    </section>
+</main>
 <script>
     document.querySelectorAll(".video-item__btn")
         .forEach(element => element.addEventListener("click", function () {
